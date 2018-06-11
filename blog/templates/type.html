@@ -1,0 +1,17 @@
+{% include "header.html" %}
+
+    <div class="container" style="margin-top: 50px;">
+
+      <div class="starter-template">
+
+        {% for type in type_list %}
+            <h2>{{ type.title }}</h2>
+            <p>{{ type.timestamp }}</p>
+            <p>{{ type.order }}</p>
+        {% endfor %}
+
+      </div>
+
+    </div><!-- /.container -->
+
+ {% include "footer.html" %}

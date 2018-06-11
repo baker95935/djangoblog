@@ -16,3 +16,8 @@ class Link(models.Model):
     link = models.CharField(max_length = 120) #链接地址
     order = models.IntegerField() #排序
     timestamp = models.DateTimeField() #创建时间
+
+class PostType(models.Model):
+    title = models.CharField(max_length = 60) #分类标题
+    order = models.IntegerField() #排序
+    timestamp = models.DateTimeField() #创建时间
